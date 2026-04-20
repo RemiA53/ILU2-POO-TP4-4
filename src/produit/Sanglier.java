@@ -23,16 +23,16 @@ public class Sanglier extends Produit {
 	
 	
 	@Override
-	public void decrireProduit() {
+	public String decrireProduit() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(getNom());
 		sb.append(" de ");
 		sb.append(poids);
 		sb.append(" ");
 		sb.append(getUnite());
-		sb.append(" chassé par ");
+		sb.append(" chassï¿½ par ");
 		sb.append(chasseur.getNom());
-		System.out.println(sb.toString());
+		return sb.toString();
 	}
 
 }

@@ -13,10 +13,11 @@ public class Poisson extends Produit {
 	}
 
 	@Override
-	public void decrireProduit() {
+	public String decrireProduit() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(getNom());
-		sb.append(" pêchés ");
+		sb.append(" pï¿½chï¿½s ");
 		sb.append(date);
+		return(sb.toString());
 	}
 }

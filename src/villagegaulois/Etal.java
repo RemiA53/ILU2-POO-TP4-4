@@ -5,8 +5,8 @@ import produit.IProduit;
 
 public class Etal<P extends IProduit> implements IEtal {
 	private Gaulois vendeur;
-	int nbProduit = 0;
-	P[] produits;
+	private int nbProduit = 0;
+	private P[] produits;
 	private int quantiteDebutMarche;
 	private int quantite;
 	private boolean etalOccupe = false;
@@ -78,7 +78,7 @@ public class Etal<P extends IProduit> implements IEtal {
 		}
 		chaine.append("\nChaque produit est vendu au prix de ");
 		chaine.append(prix);
-		chaine.append(" sous.");
+		chaine.append(" sous. \n");
 	} else {
 		chaine.append(" n'a plus rien à vendre.");
 	}
